@@ -107,7 +107,7 @@ function decrement() {
     document.getElementById("counting").innerText = data;
 }
 
-document.querySelector(".heart-box").onclick = function () {
-    let heart = document.querySelector("#heart");
-    heart.classList.toggle("active")
-}
+// document.querySelector(".heart-box").onclick = function () {
+//     let heart = document.querySelector("#heart");
+//     heart.classList.toggle("active")
+// }
