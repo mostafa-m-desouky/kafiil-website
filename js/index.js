@@ -9,8 +9,8 @@ allLis.forEach (function (ele) {
 })
 
 let toggle = document.querySelector(".login");
+let setting = document.querySelector(".setting-box");
 toggle.onclick = function () {
-    let setting = document.querySelector(".setting-box");
     setting.classList.toggle("open")
 }
 

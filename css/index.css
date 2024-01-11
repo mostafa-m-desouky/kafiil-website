@@ -63,7 +63,7 @@ header .container .controls ul {
     align-items: center;
     gap: 25px;
 }
-header .container .controls ul .controls-box {
+header .container .controls ul .controls-box a {
     display: flex;
     flex-direction: column;
     align-items: center;
