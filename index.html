@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Kafiil</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/main-logo2.png" alt="logo">
+            </div>
+            <nav class="controls">
+                <ul>
+                    <li class="controls-box active">
+                        <img src="assets/font-awesome/cart.png" alt="">
+                        <span class="txt">Auctions</span>
+                    </li>
+                    <li class="controls-box">
+                        <img src="assets/font-awesome/vector-(1).png" alt="vector-1">
+                        <span class="txt">Contests</span>
+                    </li>
+                    <li class="controls-box">
+                        <img src="assets/font-awesome/vector-(2).png" alt="vector-2">
+                        <span class="txt">Project</span>
+                    </li>
+                    <li class="controls-box">
+                        <img src="assets/font-awesome/vector-(3).png" alt="vector-3">
+                        <span class="txt">Portfolios</span>
+                    </li>
+                    <li class="controls-box">
+                        <img src="assets/font-awesome/vector-(4).png" alt="vector-4">
+                        <span class="txt">freelancers</span>
+                    </li>
+                    <li class="controls-box">
+                        <img src="assets/font-awesome/vector-(5).png" alt="vector-5">
+                        <span class="txt">forum</span>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="admin">
+                <ul>
+                    <li class="chat">
+                        <img src="assets/font-awesome/chat.png" alt="chat">
+                        <span class="number">10</span>
+                    </li>
+                    <li class="notification">
+                        <img src="assets/font-awesome/notifaction.png" alt="">
+                        <span class="number">10</span>
+                    </li>
+                    <li class="login">
+                        <img src="assets/Ellipse-1.png" alt="ellipse" class="border">
+                        <ul class="setting-box Open" id="setting-box">
+                            <li class="status">
+                                <div class="left">
+                                    <img src="assets/Ellipse-1.png" alt="ellipse" class="border">
+                                </div>
+                                <div class="right">
+                                    <h3>Ahmed Ali</h3>
+                                    <span>Student</span>
+                                </div>
+                            </li>
+                            <li class="profile">
+                                <img src="assets/font-awesome/profile.png" alt="profile">
+                                <span>My Profile</span>
+                            </li>
+                            <li class="dark-mode">
+                                <div class="left">
+                                    <img src="assets/font-awesome/moon.png" alt="moon">
+                                    <span>Dark Mode</span>
+                                </div>
+                                <label>
+                                    <input class="toggle-checkbox" type="checkbox">
+                                    <div class="toggle-switch"></div>
+                                </label> 
+                            </li>
+                            <li class="language">
+                                <div class="left">
+                                    <img src="assets/font-awesome/language.png" alt="language">
+                                    <span>Language</span>
+                                </div>
+                                <div class="right">
+                                    <span>العربية</span>
+                                    <!-- <span class="line"></span> -->
+                                    <img src="assets/flag.png" alt="flag">
+                                </div>
+                            </li>
+                            <li class="setting">
+                                <img src="assets/font-awesome/setting.png" alt="setting">
+                                <span>Account Setting</span>
+                            </li>
+                            <li class="logout">
+                                <img src="assets/font-awesome/logout.png" alt="logout">
+                                <span>Logout</span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="sec">
+                <div class="logo-design">
+                    <h3>Design/Logo Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet,</p>
+                    <div class="logo-star">
+                        <div class="left">
+                            <div class="star">
+                                <img src="assets/font-awesome/star.png" alt="star">
+                                <img src="assets/font-awesome/star.png" alt="star">
+                                <img src="assets/font-awesome/star.png" alt="star">
+                                <img src="assets/font-awesome/star.png" alt="star">
+                                <img src="assets/font-awesome/star.png" alt="star">
+                            </div>
+                            <span>4.1 (500)</span>
+                        </div>
+                        <div class="right">
+                            <img src="assets/font-awesome/share.png" alt="share">
+                            <img src="assets/font-awesome/heart.png" alt="heart">
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-image">
+                    <i class="fa-solid fa-chevron-left left" id="left"  onclick="prevSlide();"></i>
+                    <i class="fa-solid fa-chevron-right right" id="right" onclick="nextSlide();"></i>
+                </div>
+                <div class="description">
+                    <h2>Description</h2>
+                    <div class="description-box">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet, 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet, 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet, 
+                            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque 
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="service-head">
+                        <h2>Service Add-Ons</h2>
+                        <span><i class="fa-regular fa-circle-check"></i> Select All</span>
+                    </div>
+                    <div class="service-box">
+                        <div class="box">
+                            <div class="top">
+                                <div class="circle"></div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum 
+                                    dolor sit amet, Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <div class="bottom">
+                                <span>$100</span>
+                                <span>2 days</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="top">
+                                <div class="circle"></div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum 
+                                    dolor sit amet, Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <div class="bottom">
+                                <span>$100</span>
+                                <span>2 days</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="top">
+                                <div class="circle"></div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum 
+                                    dolor sit amet, Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <div class="bottom">
+                                <span>$100</span>
+                                <span>2 days</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="purchase">
+                    <h2>Purchase Service</h2>
+                    <div class="purchase-box">
+                        <div class="counter">
+                            <span><i class="fa-solid fa-minus" onclick="decrement();"></i></span>
+                            <span id="counting">0</span>
+                            <span><i class="fa-solid fa-plus" onclick="increment();"></i></span>
+                        </div>
+                        <div class="price">$300</div>
+                        <div class="purchase-btn">Purchase</div>
+                    </div>
+                </div>
+                <div class="rating">
+                    <div class="service-rating">
+                        <img src="assets/font-awesome/star.png" alt="star">
+                        <h2>4.6 Service Rating . 46 Rating</h2>
+                    </div>
+                    <div class="box-rating">
+                        <div class="box">
+                            <div class="title">
+                                <h3>work Quality</h3>
+                                <img src="assets/font-awesome/star.png" alt="star">
+                                <span>5.0</span>
+                            </div>
+                            <div class="star-rating">
+                                <img src="assets/font-awesome/star.png" alt="star">
+                                <img src="assets/font-awesome/star.png" alt="star">
+                                <img src="assets/font-awesome/star.png" alt="star">
+                                <img src="assets/font-awesome/star.png" alt="star">
+                                <img src="assets/font-awesome/star.png" alt="star">
+                            </div>
+                            <div class="progress-rating">
+                                <span style="width: 80%;" data-progress="80%"></span>
+                            </div>
+                            <div class="number-rating">4</div>
+                        </div>
+                        <div class="box">
+                            <div class="title">
+                                <h3>work Quality</h3>
+                                <img src="assets/font-awesome/star.png" alt="star">
+                                <span>5.0</span>
+                            </div>
+                            <div class="star-rating">
+                                <img src="assets/font-awesome/star.png" alt="star">
+                                <img src="assets/font-awesome/star.png" alt="star">
+                                <img src="assets/font-awesome/star.png" alt="star">
+                                <img src="assets/font-awesome/star.png" alt="star">
+                                <img src="assets/font-awesome/star.png" alt="star">
+                            </div>
+                            <div class="progress-rating">
+                                <span style="width: 80%;" data-progress="80%"></span>
+                            </div>
+                            <div class="number-rating">4</div>
+                        </div>
+                        <div class="box">
+                            <div class="title">
+                                <h3>work Quality</h3>
+                                <img src="assets/font-awesome/star.png" alt="star">
+                                <span>5.0</span>
+                            </div>
+                            <div class="star-rating">
+                                <img src="assets/font-awesome/star.png" alt="star">
+                                <img src="assets/font-awesome/star.png" alt="star">
+                                <img src="assets/font-awesome/star.png" alt="star">
+                                <img src="assets/font-awesome/star.png" alt="star">
+                                <img src="assets/font-awesome/star.png" alt="star">
+                            </div>
+                            <div class="progress-rating">
+                                <span style="width: 80%;" data-progress="80%"></span>
+                            </div>
+                            <div class="number-rating">4</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="customer-review">
+                    <div class="review-box">
+                        <div class="box">
+                            <div class="left">
+                                <img src="assets/janeAvatar.png" alt="jane">
+                            </div>
+                            <div class="right">
+                                <div class="upper">
+                                    <h4>Jane Smith</h4>
+                                </div>
+                                <div class="lower">
+                                    <div class="star-rate">
+                                        <img src="assets/font-awesome/star.png" alt="star">
+                                        <img src="assets/font-awesome/star.png" alt="star">
+                                        <img src="assets/font-awesome/star.png" alt="star">
+                                        <img src="assets/font-awesome/star.png" alt="star">
+                                        <img src="assets/font-awesome/star.png" alt="star">
+                                    </div>
+                                    <div class="time">
+                                        <span>.</span>
+                                        <span>30m</span>
+                                    </div>
+                        </div>
+                                <div class="review-title">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras 
+                                        neque Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur 
+                                        adipiscing elit.... Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                        Diam nisi, cras neque Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing elit....
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-box">
+                        <div class="box">
+                            <div class="left">
+                                <img src="assets/janeAvatar.png" alt="jane">
+                            </div>
+                            <div class="right">
+                                <div class="upper">
+                                    <h4>Jane Smith</h4>
+                                </div>
+                                <div class="lower">
+                                    <div class="star-rate">
+                                        <img src="assets/font-awesome/star.png" alt="star">
+                                        <img src="assets/font-awesome/star.png" alt="star">
+                                        <img src="assets/font-awesome/star.png" alt="star">
+                                        <img src="assets/font-awesome/star.png" alt="star">
+                                        <img src="assets/font-awesome/star.png" alt="star">
+                                    </div>
+                                    <div class="time">
+                                        <span>.</span>
+                                        <span>30m</span>
+                                    </div>
+                        </div>
+                                <div class="review-title">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras 
+                                        neque Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur 
+                                        adipiscing elit.... Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                        Diam nisi, cras neque Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing elit....
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-box">
+                        <div class="box">
+                            <div class="left">
+                                <img src="assets/janeAvatar.png" alt="jane">
+                            </div>
+                            <div class="right">
+                                <div class="upper">
+                                    <h4>Jane Smith</h4>
+                                </div>
+                                <div class="lower">
+                                    <div class="star-rate">
+                                        <img src="assets/font-awesome/star.png" alt="star">
+                                        <img src="assets/font-awesome/star.png" alt="star">
+                                        <img src="assets/font-awesome/star.png" alt="star">
+                                        <img src="assets/font-awesome/star.png" alt="star">
+                                        <img src="assets/font-awesome/star.png" alt="star">
+                                    </div>
+                                    <div class="time">
+                                        <span>.</span>
+                                        <span>30m</span>
+                                    </div>
+                        </div>
+                                <div class="review-title">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras 
+                                        neque Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur 
+                                        adipiscing elit.... Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                        Diam nisi, cras neque Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing elit....
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment-review">
+                        <div class="write">
+                            <img src="assets/Ellipse-1.png" alt="ellipse">
+                            <textarea placeholder="Write your review in here" tabindex="5" required></textarea>
+                        </div>
+                        <span>Post Review</span>
+                    </div>
+                </div>
+            </section>
+            <aside>
+                <div class="contact">
+                    <div class="info-contact">
+                        <div class="mark">
+                            <img src="assets/font-awesome/mark.png" alt="mark">
+                        </div>
+                        <div class="login">
+                            <img src="assets/font-awesome/login.png" alt="login">
+                        </div>
+                        <div class="id">
+                            <img src="assets/font-awesome/id.png" alt="id">
+                        </div>
+                    </div>
+                    <div class="title">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing 
+                            elit. Diam Lorem ipsum dolor sit amet..
+                        </p>
+                    </div>
+                    <div class="contact-me">
+                        <span>Contact Me</span>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <h3>info</h3>
+                    <div class="box-info-2">
+                        <div class="left">
+                            <img src="assets/font-awesome/dollar.png" alt="dollar">
+                            <span>price</span>
+                        </div>
+                        <div class="right">
+                            <span>$10</span>
+                        </div>
+                    </div>
+                    <div class="box-info-2">
+                        <div class="left">
+                            <img src="assets/font-awesome/delivery.png" alt="delivery">
+                            <span>Delivery Duration</span>
+                        </div>
+                        <div class="right">
+                            <span>1Day</span>
+                        </div>
+                    </div>
+                    <div class="box-info-2">
+                        <div class="left">
+                            <img src="assets/font-awesome/order.png" alt="order">
+                            <span>in progress orders</span>
+                        </div>
+                        <div class="right">
+                            <span>2</span>
+                        </div>
+                    </div>
+                    <div class="box-info-2">
+                        <div class="left">
+                            <img src="assets/font-awesome/customers.png" alt="customers">
+                            <span>Customers</span>
+                        </div>
+                        <div class="right">
+                            <span>2</span>
+                        </div>
+                    </div>
+                    <div class="box-info-2">
+                        <div class="left">
+                            <img src="assets/font-awesome/sales.png" alt="sales">
+                            <span>Customers</span>
+                        </div>
+                        <div class="right">
+                            <span>2</span>
+                        </div>
+                    </div>
+                    <div class="box-info-2">
+                        <div class="left">
+                            <img src="assets/font-awesome/category.png" alt="category">
+                            <span>category</span>
+                        </div>
+                        <div class="right">
+                            <span>Design</span>
+                        </div>
+                    </div>
+                    <div class="box-info-2">
+                        <div class="left">
+                            <img src="assets/font-awesome/category.png" alt="category">
+                            <span>subcategory</span>
+                        </div>
+                        <div class="right">
+                            <span>Logo Design</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="share-box">
+                    <h4>Share & Earn</h4>
+                    <div class="share">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fa-brands fa-square-twitter"></i>
+                        <i class="fa-regular fa-copy"></i>
+                    </div>
+                </div>
+                <div class="seller">
+                    <span>Seller Other Servics</span>
+                    <span>see more</span>
+                </div>
+                <div class="video-box">
+                    <div class="video">
+                        <div class="img-box">
+                            <img src="assets/Rectangle-6.png" alt="">
+                        </div>
+                        <div class="information">
+                            <p>Lorem ipsum dolor sit ame, consecteturLorem ipsum dolor... </p>
+                            <div class="info-video">
+                                <div class="left">
+                                    <img src="assets/font-awesome/star.png" alt="star">
+                                    <span>4.9[50]</span>
+                                </div>
+                                <div class="middle">
+                                    <img src="assets/font-awesome/vector-1.png" alt="vector">
+                                    <span>10$</span>
+                                </div>
+                                <div class="right">
+                                    <img src="assets/font-awesome/heart.png" alt="heart">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <div class="img-box">
+                            <img src="assets/Rectangle-6.png" alt="">
+                        </div>
+                        <div class="information">
+                            <p>Lorem ipsum dolor sit ame, consecteturLorem ipsum dolor... </p>
+                            <div class="info-video">
+                                <div class="left">
+                                    <img src="assets/font-awesome/star.png" alt="star">
+                                    <span>4.9[50]</span>
+                                </div>
+                                <div class="middle">
+                                    <img src="assets/font-awesome/vector-1.png" alt="vector">
+                                    <span>10$</span>
+                                </div>
+                                <div class="right">
+                                    <img src="assets/font-awesome/heart.png" alt="heart">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <div class="img-box">
+                            <img src="assets/Rectangle-6.png" alt="">
+                        </div>
+                        <div class="information">
+                            <p>Lorem ipsum dolor sit ame, consecteturLorem ipsum dolor... </p>
+                            <div class="info-video">
+                                <div class="left">
+                                    <img src="assets/font-awesome/star.png" alt="star">
+                                    <span>4.9[50]</span>
+                                </div>
+                                <div class="middle">
+                                    <img src="assets/font-awesome/vector-1.png" alt="vector">
+                                    <span>10$</span>
+                                </div>
+                                <div class="right">
+                                    <img src="assets/font-awesome/heart.png" alt="heart">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            
+        </div>
+    </main>
+    <section class="suggested">
+        <div class="container">
+            <div class="suggested-service">
+                <h2>Suggested Service</h2>
+                <span>see more</span>
+            </div>
+            <div class="suggested-card">
+                <div class="card">
+                    <div class="img-box">
+                        <img src="assets/Rectangle-7.png" alt="Rectangle">
+                        <div class="heart-box">
+                            <img src="assets/font-awesome/heart.png" alt="heart" id="heart">
+                        </div>
+                    </div>
+                    <div class="title">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    </div>
+                    <div class="price">
+                        <div class="rate">
+                            <img src="assets/font-awesome/star.png" alt="star">
+                            <span>4.9</span>
+                        </div>
+                        <div class="price-cart">
+                            <img src="assets/font-awesome/cart.png" alt="cart">
+                            <span>300</span>
+                        </div>
+                    </div>
+                    <div class="discount">
+                        <div class="info">
+                            <img src="assets/Ellipse-1.png" alt="ellipse">
+                            <span>
+                                Jane Smith
+                            </span>
+    
+                        </div>
+                        <div class="vector">
+                            <img src="assets/font-awesome/vector-5.png" alt="vector">
+                            <span>10$</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-box">
+                        <img src="assets/Rectangle-7.png" alt="Rectangle">
+                        <div class="heart-box">
+                            <img src="assets/font-awesome/heart.png" alt="heart" id="heart">
+                        </div>
+                    </div>
+                    <div class="title">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    </div>
+                    <div class="price">
+                        <div class="rate">
+                            <img src="assets/font-awesome/star.png" alt="star">
+                            <span>4.9</span>
+                        </div>
+                        <div class="price-cart">
+                            <img src="assets/font-awesome/cart.png" alt="cart">
+                            <span>300</span>
+                        </div>
+                    </div>
+                    <div class="discount">
+                        <div class="info">
+                            <img src="assets/Ellipse-1.png" alt="ellipse">
+                            <span>
+                                Jane Smith
+                            </span>
+    
+                        </div>
+                        <div class="vector">
+                            <img src="assets/font-awesome/vector-5.png" alt="vector">
+                            <span>10$</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-box">
+                        <img src="assets/Rectangle-7.png" alt="Rectangle">
+                        <div class="heart-box">
+                            <img src="assets/font-awesome/heart.png" alt="heart" id="heart">
+                        </div>
+                    </div>
+                    <div class="title">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    </div>
+                    <div class="price">
+                        <div class="rate">
+                            <img src="assets/font-awesome/star.png" alt="star">
+                            <span>4.9</span>
+                        </div>
+                        <div class="price-cart">
+                            <img src="assets/font-awesome/cart.png" alt="cart">
+                            <span>300</span>
+                        </div>
+                    </div>
+                    <div class="discount">
+                        <div class="info">
+                            <img src="assets/Ellipse-1.png" alt="ellipse">
+                            <span>
+                                Jane Smith
+                            </span>
+    
+                        </div>
+                        <div class="vector">
+                            <img src="assets/font-awesome/vector-5.png" alt="vector">
+                            <span>10$</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-box">
+                        <img src="assets/Rectangle-7.png" alt="Rectangle">
+                        <div class="heart-box">
+                            <img src="assets/font-awesome/heart.png" alt="heart" id="heart">
+                        </div>
+                    </div>
+                    <div class="title">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    </div>
+                    <div class="price">
+                        <div class="rate">
+                            <img src="assets/font-awesome/star.png" alt="star">
+                            <span>4.9</span>
+                        </div>
+                        <div class="price-cart">
+                            <img src="assets/font-awesome/cart.png" alt="cart">
+                            <span>300</span>
+                        </div>
+                    </div>
+                    <div class="discount">
+                        <div class="info">
+                            <img src="assets/Ellipse-1.png" alt="ellipse">
+                            <span>
+                                Jane Smith
+                            </span>
+    
+                        </div>
+                        <div class="vector">
+                            <img src="assets/font-awesome/vector-5.png" alt="vector">
+                            <span>10$</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/index.js"></script>
+</body>
+</html>
